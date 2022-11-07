@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="light" data-text="Hello world / Hola mundo">
+        Hello World / Hola Mundo
+    </div>
+</body>
+    <style>
+        body{
+            --var-color: rgb(0,238,255);
+            background: #000;
+        }
+        .light{
+            font-size: 2em;
+            position: relative;
+            color: var(--var-color);
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            
+        }
+        .light::before{
+            position: absolute;
+            content: attr(data-text);
+            text-shadow: 0px 0px 20px var(--var-color);
+            filter: blur(10px) brightness(0);
+            animation: flicker 10s infinite forwards;
+            animation-delay: 1%;
+        }
+        @keyframes flicker {
+            0%{
+                filter: blur(10px) brightness(1);
+            }
+            10%{
+                filter: blur(5px) brightness(0);
+                
+            }
+            20%{
+                filter: blur(5px) brightness(1);
+                
+            }
+            30%{
+                filter: blur(5px) brightness(0);
+            }
+            40%{
+                filter: blur(5px) brightness(1);
+                
+            }
+            50%{
+                filter: blur(5px) brightness(0);
+                
+            }
+   
+            60%{
+                filter: blur(5px) brightness(1);
+                
+            }
+            70%{
+                filter: blur(5px) brightness(0);
+                
+            }
+            80%{
+                filter: blur(5px) brightness(1);
+                
+            }
+
+            90%{
+                filter: blur(5px) brightness(1);
+                
+            }
+            100%{
+                filter: blur(5px) brightness(0);
+
+            }
+
+        }
+    </style>
+</html>

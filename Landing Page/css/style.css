@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #ddeefc;
+    font-family: 'Lato', sans-serif;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --------------Tarjeta-------------- */
+
+.tarjeta{
+    width: 100%;
+    max-width: 550px;
+    position: relative;
+    color: #fff;
+    transition: .3s ease all;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    cursor: pointer;
+    z-index: 2;
+}
+.tarjeta.active{
+    transform: rotateY(180deg);
+}
+.tarjeta > div{
+    padding: 30px;
+    border-radius: 15px;
+    min-height: 315px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 10px 0 rgba(90,116,148,0.3);
+}
+.tarjeta .delantera{
+    width: 100%;
+    background: url(../img/bg-tarjeta/pexels-photo-11325889.jpeg);
+    background-size: cover;
+}
+.delantera .logo-marca{
+    text-align: right;
+    min-height: 50px;
+}
+.delantera .logo-marca img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 80px;
+}
+.delantera .chip{
+    width: 100%;
+    max-width: 50px;
+    margin-bottom: 20px;
+}
+
+.delantera .grupo .label{
+    font-size: 16px;
+    color: #d4e727;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.delantera .grupo .numero,
+.delantera .grupo .nombre,
+.delantera .grupo .expiracion{
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.delantera .flexbox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}

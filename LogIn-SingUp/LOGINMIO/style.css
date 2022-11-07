@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url(https://images.pexels.com/photos/12499887/pexels-photo-12499887.jpeg?cs=srgb&dl=pexels-mati-mango-12499887.jpg&fm=jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.wrapper{
+     width: 400px;
+    height: 530px;
+    color: #000;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    padding: 60px 20px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    box-shadow: 8px 8px 50px #000;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+h1{
+    font-size: 3em;
+    color: #CC2936;
+    text-transform: uppercase;
+
+}
+.inputs{
+    display: inline-block;
+    padding: 10px;
+    overflow: hidden;
+    
+}
+.inputs input{
+    display: flex;
+    padding: 10px 20px;
+
+    width: 100%;
+    margin: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.forgo{
+    padding: 10px;
+    font-size: 1.3em;
+}
+.Forgotten:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.button{
+    padding: 5px;
+    width: 83%; 
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 30px;
+}
+.checker{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.checker span{
+    font-size: 1em;
+}
+.checker span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.checker input[type=checkbox]{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    outline: none;
+    background: #CC2936;
+}
+.socials{
+    padding: 20px;
+    
+}
+.socials a{
+    padding: 10px;
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 2em;    
+}
+.socials a:nth-child(1){
+    background: #0C6291;
+ }
+.socials a:nth-child(2){
+   background: #CC2936;
+
+}
+.socials a:nth-child(3){
+    background: #55C1FF;
+}
+.socials a:nth-child(4){
+    background: #000004;
+    font-size: 2em;
+}
+.socials a i{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 3px;
+    text-align: center;
+}
+
+

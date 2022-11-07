@@ -1,0 +1,44 @@
+body{
+    background-color: #333;
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.typewriterh h1{
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: 1px solid rgb(223, 45, 154);
+    white-space: nowrap;
+    margin: 100% auto;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: .15em;
+    animation: 
+    typing 3.5s steps(50, end),
+    blink-caret .5s step-end infinite;
+}
+.typewriterh i{
+    text-transform: uppercase;
+    font-style: normal;
+    cursor: pointer;
+    text-overflow: initial;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes blink-caret {
+    from,
+    to{
+        border-color: transparent;
+    }
+    50%{
+        border-color: rgb(223, 45, 154);
+    }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>Music player Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Master-play.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="menu-side">
+            <h1>Lista de reproducciones</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Playist</h4>
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Ultima escuchada</h4>
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Recomendaciones</h4>
+            </div>
+            <div class="menu-song">
+                <li class="song-time">
+                    <span>01</span>
+                    <img src="./imagenes/Spy-family.jpg" alt="Spy">
+                    <h5>
+                        Spy-Family-OPENING1
+                    <div class="subtitle">Hige Dandism</div>
+                    </h5>
+                    <i class="bi playlistplay bi-play-circle" id="i"></i>
+                </li><li class="song-time">
+                    <span>02</span>
+                    <img src="./imagenes/Spy-family.jpg" alt="Spy">
+                    <h5>
+                        Spy-Family-OPENING1
+                        <div class="subtitle">Hige Dandism</div>
+                    </h5>
+                    <i class="bi playlistplay bi-play-circle" id="i"></i>
+                </li><li class="song-time">
+                    <span>03</span>
+                    <img src="./imagenes/Spy-family.jpg" alt="Spy">
+                    <h5>
+                        Spy-Family-OPENING1
+                        <div class="subtitle">Hige Dandism</div>
+                    </h5>
+                    <i class="bi playlistplay bi-play-circle" id="i"></i>
+                </li><li class="song-time">
+                    <span>04</span>
+                    <img src="./imagenes/Spy-family.jpg" alt="Spy">
+                    <h5>
+                        Spy-Family-OPENING1
+                        <div class="subtitle">Hige Dandism</div>
+                    </h5>
+                        <i class="bi playlistplay bi-play-circle" id="i"></i>
+                </li><li class="song-time">
+                    <span>05</span>
+                    <img src="./imagenes/Spy-family.jpg" alt="Spy">
+                    <h5>
+                        Spy-Family-OPENING1
+                        <div class="subtitle">Hige Dandism</div>
+                    </h5>
+                        <i class="bi playlistplay bi-play-circle" id="i"></i>
+                </li><li class="song-time">
+                    <span>06</span>
+                    <img src="./imagenes/Spy-family.jpg" alt="Spy">
+                    <h5>
+                        Spy-Family-OPENING1
+                        <div class="subtitle">Hige Dandism</div>
+                    </h5>
+
+                        <i class="bi playlistplay bi-play-circle" id="i"></i>
+                </li>
+            </div>
+        </div>
+        <div class="song-side"></div>
+        <div class="master-play">
+            <div class="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="./imagenes/Spy-family.jpg" alt="Hige Dandism">
+            <h5>
+                Spy-Family-OPENING1 <br>
+                        <div class="subtitle">Hige Dandism</div>
+            </h5>
+            <div class="icon">
+                <i class="bi bi-skip-start-fill"></i>
+                <i class="bi bi-play-fill"></i>
+                <i class="bi bi-skip-end-fill"></i>
+            </div>
+            <span id="currentStart">0:00</span>
+            <div class="bar">
+                <input type="range"  id="seek" min="0" value="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="currentEnd">0:00</span>
+            <div class="vol">
+                <i class="bi bi-volume-down-fill"></i>
+                <input type="range" id="vol" min="0" value="30" max="100">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+            </div>
+        </div>
+    </header>
+    <script src="app.js"></script>
+</body>
+</html>

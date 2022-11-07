@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://images.pexels.com/photos/1025469/pexels-photo-1025469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    background: none;
+    width: 500px;
+    overflow: hidden;
+    height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 20px 20px 0px;
+}
+.container .title-icon{
+    padding: 20px;
+}
+.title-icon .icon{
+    background: #fff;
+    width: 90px;
+    padding: 20px;
+    height: 90px;
+    border-radius: 100%;
+}
+.title-icon .title{
+    color: #fff;
+    text-transform: uppercase;
+}
+.container .inputs{
+    padding: 10px;
+}
+.inputs > div{
+    padding: 5px;
+    width: 100%;
+  
+}
+.username, .password{
+    border-bottom: 1px solid black;
+
+}
+input[type=text],input[type=password]{
+    background: none;
+    width: 90%;
+    border: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.inputs .remember{
+    display: flex;
+}
+.remember a{
+    text-decoration: none;
+    padding-left: 10px;
+    color: #70D6FF;
+}
+
+.remember a:hover{
+    text-decoration: underline;
+}
+.container .button{
+    width: 100%;
+    max-width: 1000px;
+    height: 40px;
+}
+.button button{
+    width: 20%;
+    max-width: 500px;
+    height: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    border: 1px solid black ;
+    background: none;
+    color: #70D6FF;
+    border-radius: 10px;
+
+}

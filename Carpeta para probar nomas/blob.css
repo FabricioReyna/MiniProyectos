@@ -1,0 +1,16 @@
+body{
+    align-items: center;
+    justify-content: center;
+    
+}
+
+    .blob{
+        animation: hue-animation 10s alternate infinite;
+        width: 600px;
+        height: 450px;
+    }
+    @keyframes hue-animation {
+        100%{
+            filter: hue-rotate(360deg);
+        }
+    }

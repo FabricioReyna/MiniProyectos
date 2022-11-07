@@ -1,0 +1,38 @@
+body{
+    background: #eee;
+}
+.loading{
+    left: 50%;
+    top: 50%;
+    font-size: 36px;
+    font-family: serif;
+    font-weight: bold;
+    letter-spacing: 4.4px;
+    position: absolute;
+    text-transform: capitalize;
+    overflow: hidden;
+    transform: translate(-50%, -60%);
+}
+.loading::before{
+    color: #aaa;
+    content: attr(data-loading-text);
+}
+.loading::after{
+    top: 0;
+    left: 0;
+    width: 0;
+    opacity: 1;
+    color: #444;
+    overflow: hidden;
+    position: absolute;
+    content: attr(data-loading-text);
+    animation: loading 7s infinite;
+}
+@keyframes loading {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}

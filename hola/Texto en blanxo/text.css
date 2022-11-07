@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+h2{
+    font-size: 6em;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+h2 span{
+    transition: 0.5s;
+}
+h2:hover span:nth-child(1){
+    margin-right: 10px;
+}
+h2 span:nth-child(1)::before{
+    margin-left: 10px;
+}
+h2:hover span:nth-child(2){
+    margin-left: 10px;
+}

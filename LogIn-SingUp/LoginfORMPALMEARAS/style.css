@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(https://siaguanta.com/wp-content/uploads/2020/05/que-es-wallpaper1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1;
+}
+.wrapper{
+    width: 400px;
+    height: 430px;
+    color: #000;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    padding: 60px 30px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    box-shadow: 8px 8px 50px #000;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 2.3em;
+    text-align: center;
+    margin-bottom: 8%;
+    font-family: 'Courgette', cursive;
+}
+.wrapper input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.wrapper input[type=text], .wrapper input[type=password]{
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    font-size: 16px;
+    opacity: 1;
+    color: #000;
+}
+.wrapper input[type=button]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #f6648b;
+    color: #Fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.wrapper input[type=submit]:hover{
+    cursor: pointer;
+}
+.wrapper a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.8;
+}
+.wrapper a:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+.bottom-text{
+    color: #000;
+    text-align: center;
+}
+.bottom-text input{
+    width: 10%;
+}
+
+.bottom-text a{
+    display: block;
+    padding: 5px;
+    color: #000;
+}
+.socials{
+    margin: 12px;
+    text-align: center;
+
+}
+.socials a{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.socials a:nth-child(1){
+    background: #3b5998;
+}
+.socials a:nth-child(2){
+    background: #55acee;
+}
+.socials a:nth-child(3){
+    background: #bd081c;
+}
+.socials a:nth-child(4){
+    background: #E32626;
+}
+.socials a i{
+    padding: 13px 0;
+}

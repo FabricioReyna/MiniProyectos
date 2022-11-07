@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row align-items-center mt-5">
+            <div class="layer2"></div>
+            <div class="col-md-4 mt-5 offset-md-4 px-0">
+                <div class="layer"></div>
+                <div class="card">
+                    <div class="card-body mt-5">
+                        <div class="round">
+                            <p class="p">Login</p>
+                        </div>
+                        <div class="fields">
+                            <div class="username">
+                                <i class="fa fa-user icon"></i>
+                                <input type="text" name="name" class="user-input" id="txtEmail" placeholder="Username">
+                            </div>
+                            <div class="password">
+                                <i class="fa fa-lock icon"></i>
+                                <input type="password" name="name" class="pass-input" id="txtPass" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="text-center msg" id="msg-div">
+                            <span id="message"></span>
+                        </div>
+                        <div class="d-flex mx-auto justify-content-between forgot p-1">
+                            <a href="#">Forgot Password?</a>
+                            <a href="#">Register?</a>
+                        </div>
+                        <button type="submit" class="btn btn-login d-flex mx-auto mb-2">login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

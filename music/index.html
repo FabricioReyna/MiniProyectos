@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musica en Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="./Imagenes/logo.png" alt="Logo" class="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SOBRE QUE</a></li>
+                <li><a href="#">ESPECIFICACIONES</a></li>
+                <li><a href="#">PRODUCTOS</a></li>
+                <li><a href="#">CONECTAR</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left-col">
+                <h1>El <br>Sonido<br> Real</h1>
+            </div>
+            <div class="right-col">
+                <p>Click para escuchar <a class="nomnre"href="/Music2/Index.html">mas.</a></p>
+                <img src="./Imagenes/play.png" alt="play" id="icon">
+            </div>
+        </div>
+    </div>
+
+    <audio id="mYsong">
+        <source type="audio/mp3" src="./Imagenes/Spy-Family.mp3">
+    </audio>
+
+    <script>
+        var mYsong = document.getElementById("mYsong");
+        var icon = document.getElementById("icon");
+        icon.onclick = function (){
+            if(mYsong.paused){
+                mYsong.play();
+                icon.src = "./Imagenes/pause.png";
+            } else{
+                mYsong.pause();
+                icon.src = "./Imagenes/play.png";
+            }
+        }
+    </script>
+</body>
+</html>
